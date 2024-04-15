@@ -17,7 +17,7 @@ public class CalculadoraEspecial {
 	public long Calcular_Sumatoria() {
 		long sumatoria=0;
 		for (int k=1; k<=getN(); k++) {
-			sumatoria+=Math.pow(((k*(k+1))/2), 2);
+			sumatoria+= Math.pow(((k*(k+1))/2), 2);
 		}
 		return sumatoria;
 	}
