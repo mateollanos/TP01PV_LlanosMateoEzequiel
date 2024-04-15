@@ -15,16 +15,15 @@ public class Main {
 		for (int i=0; i<cant; i++) {
 			System.out.println("Ingrese los datos para el producto "+(i+1)+":");
 			
+			producto[i] = new Producto();
 			System.out.println("Nombre del producto:");
 			String nombre = scanner.next();
+			producto[i].setNombre(nombre);
 			System.out.println("Codigo del producto:");
 			String codigo = scanner.next();
+			producto[i].setCodigo(codigo);
 			System.out.println("Precio del producto:");
 			Double precio = scanner.nextDouble();
-			
-			producto[i] = new Producto();
-			producto[i].setNombre(nombre);
-			producto[i].setCodigo(codigo);
 			producto[i].setPrecio(precio);
 		}
 		
@@ -33,9 +32,7 @@ public class Main {
 			producto[i].MostrarDatos();
 			System.out.println("Precio con descuento: $"+producto[i].CalcularDescuento());
 		}
-		
 		scanner.close();
-		
 	}
 
 }

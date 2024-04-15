@@ -27,8 +27,6 @@ public class Main {
 		empleado.MostrarDatos();
 		
 		scanner.close();
-		
-		
 	}
 
 }

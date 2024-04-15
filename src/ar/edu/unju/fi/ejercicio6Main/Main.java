@@ -12,7 +12,7 @@ public class Main {
 		// TODO Auto-generated method stub
 		Scanner scanner = new Scanner(System.in);
 		
-		DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+		DateTimeFormatter formateo = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
 		String Nombre, Dni, Fecha, Provincia;
 		
@@ -25,9 +25,9 @@ public class Main {
 		System.out.println("Ingrese el dni: ");
 		Dni = scanner.nextLine();
 		persona1.setDni(Dni);
-		System.out.println("Ingrese la fecha de nacimiento: ");
+		System.out.println("Ingrese la fecha de nacimiento (yyyy-mm-dd): ");
 		Fecha = scanner.nextLine();
-		persona1.setFechadeNac(LocalDate.parse(Fecha,formato));
+		persona1.setFechadeNac(LocalDate.parse(Fecha,formateo));
 		System.out.println("Ingrese la provincia: ");
 		Provincia = scanner.nextLine();
 		persona1.setProvincia(Provincia);
@@ -40,12 +40,12 @@ public class Main {
 		Nombre = scanner.nextLine();
 		System.out.println("Ingrese el dni: ");
 		Dni = scanner.nextLine();
-		System.out.println("Ingrese la fecha de nacimiento: ");
-		Fecha = scanner.nextLine();
+		System.out.println("Ingrese la fecha de nacimiento (yyyy-mm-dd): ");
+		Fecha = scanner.nextLine(); 
 		System.out.println("Ingrese la provincia: ");
 		Provincia = scanner.nextLine();
 		
-		Persona persona2 = new Persona(Dni, Nombre, LocalDate.parse(Fecha,formato), Provincia);
+		Persona persona2 = new Persona(Dni, Nombre, LocalDate.parse(Fecha,formateo), Provincia);
 		
 		persona2.MostrarDatos();
 		
@@ -55,10 +55,10 @@ public class Main {
 		Nombre = scanner.nextLine();
 		System.out.println("Ingrese el dni: ");
 		Dni = scanner.nextLine();
-		System.out.println("Ingrese la fecha de nacimiento: ");
+		System.out.println("Ingrese la fecha de nacimiento (yyyy-mm-dd): ");
 		Fecha = scanner.nextLine();
 		
-		Persona persona3 = new Persona(Dni, Nombre, LocalDate.parse(Fecha,formato));
+		Persona persona3 = new Persona(Dni, Nombre, LocalDate.parse(Fecha,formateo));
 		
 		persona3.MostrarDatos();
 		

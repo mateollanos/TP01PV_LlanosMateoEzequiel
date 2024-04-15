@@ -20,7 +20,9 @@ public class Empleado {
 	}
 	
 	public void MostrarDatos() {
-		System.out.println("Nombre del empleado: "+getNombre()+"\nLegajo: "+getLegajo()+"\nSalario $: "+getSalario());
+		System.out.println("Nombre del empleado: "+getNombre());
+		System.out.println("Legajo: "+getLegajo());
+		System.out.println("Salario: $"+getSalario());
 	}
 	
 	public void Aumento_Salario() {

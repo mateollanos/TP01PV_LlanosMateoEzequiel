@@ -35,7 +35,7 @@ public class Persona {
 	}
 	
 	public void MayorDeEdad() {
-		int edad = this.CalcularEdad();
+		int edad = CalcularEdad();
 		if (edad>18) {
 			System.out.println("La persona es mayor de edad.");
 		} else {
@@ -44,8 +44,10 @@ public class Persona {
 	}
 	
 	public void MostrarDatos () {
-		System.out.println("Dni: "+getDni()+"\nNombre: "+getNombre()+"\nFecha de Nacimiento: "
-	+getFechadeNac()+"\nProvincia: "+getProvincia());
+		System.out.println("Dni: "+getDni());
+		System.out.println("Nombre: "+getNombre());
+		System.out.println("Fecha de Nacimiento: "+getFechadeNac());
+		System.out.println("Provincia: "+getProvincia());
 		MayorDeEdad();
 		
 	}
